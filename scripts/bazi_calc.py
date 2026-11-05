@@ -312,8 +312,8 @@ def get_day_ganzhi(year: int, month: int, day: int) -> Tuple[int, int]:
     
     jd = day + (153 * m + 2) // 5 + 365 * y + y // 4 - y // 100 + y // 400 - 32045
     
-    # 1984年1月1日是甲子日，JD = 2445701
-    offset = jd - 2445701
+    # 1949年10月1日為甲子日，JD = 2433191
+    offset = jd - 2433191
     
     gan = offset % 10
     zhi = offset % 12
